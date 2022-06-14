@@ -1,0 +1,25 @@
+plugins {
+	id 'org.springframework.boot' version '2.7.0'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+
+group = 'co.objectivity.danielpokusa'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation ('com.github.javafaker:javafaker:1.0.2') { exclude module: 'org.yaml' }
+	implementation group: 'org.yaml', name: 'snakeyaml', version: '1.20'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.awaitility:awaitility:4.2.0'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

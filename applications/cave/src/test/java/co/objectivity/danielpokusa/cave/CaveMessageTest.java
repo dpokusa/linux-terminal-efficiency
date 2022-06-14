@@ -1,7 +1,16 @@
 package co.objectivity.danielpokusa.cave;
 
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
 
 class CaveMessageTest {
 
+
+    @Test
+    void shouldGenerateMessage() {
+
+        var msg = new CaveMessage();
+
+
+        msg.generateHackerMessage();
+    }
 }

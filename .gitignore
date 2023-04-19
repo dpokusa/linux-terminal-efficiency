@@ -42,6 +42,7 @@ nb-configuration.xml
 .sdkmanrc
 .envrc
 up*.sh
+.up*.sh
 
 
 *#
@@ -129,3 +130,5 @@ gradle-app.setting
 .classpath
 
 support/*
+data/
+list.txt

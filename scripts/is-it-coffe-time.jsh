@@ -5,7 +5,7 @@ import java.time.temporal.*;
 
 
 // geecon break in UTC
-private static final String COFFEE_TIME = "2023-04-20T08:50:00.00Z"; 
+private static final String COFFEE_TIME = "2023-04-20T07:50:00.00Z"; 
 
 private static final String ITS_COFFEE_MSG = "Geecon coffee time! Hurry up!";
 private static final String MINUTES_LEFT_MSG = "%d minutes left until coffee break!";

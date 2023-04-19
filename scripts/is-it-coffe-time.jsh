@@ -4,10 +4,10 @@ import java.time.*;
 import java.time.temporal.*;
 
 
-// Devox Thursday Lunch in UTC
-private static final String COFFEE_TIME = "2022-10-05T14:00:00.00Z"; 
+// geecon break in UTC
+private static final String COFFEE_TIME = "2023-04-20T08:50:00.00Z"; 
 
-private static final String ITS_COFFEE_MSG = "JDD coffee time! Hurry up!";
+private static final String ITS_COFFEE_MSG = "Geecon coffee time! Hurry up!";
 private static final String MINUTES_LEFT_MSG = "%d minutes left until coffee break!";
 
 long calculateMinutesTo(Instant expectedTime) {
@@ -15,10 +15,10 @@ long calculateMinutesTo(Instant expectedTime) {
 	return ChronoUnit.MINUTES.between(now, expectedTime);
 }
 
-var lunchTime = Instant.parse(COFFEE_TIME); 
-var minutesToLunch = calculateMinutesTo(lunchTime);
+var breakTime = Instant.parse(COFFEE_TIME); 
+var minutesToBreak = calculateMinutesTo(breakTime);
 
-var msg = minutesToLunch > 0 ? String.format(MINUTES_LEFT_MSG, minutesToLunch) : ITS_COFFEE_MSG;
+var msg = minutesToBreak > 0 ? String.format(MINUTES_LEFT_MSG, minutesToBreak) : ITS_COFFEE_MSG;
 System.out.println(msg);
 
 /exit
